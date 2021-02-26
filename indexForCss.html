@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basic</title>
+    <link rel="stylesheet" href="StyleCss.css">
+</head>
+<body>
+    <div class="header">
+        <h1>CSS Layouting</h1>
+    </div>
+    <br><hr><br>
+    <div class="main">
+        <div class="Bag1">
+            <h2>#1 Display</h2>
+            <div class="content">
+                <div class="definition">
+                    <p>Definisi Display: "Setiap tag pada HTML memiliki nilai default untuk properti <strong>display</strong>. Tetapi kita juga dapat mengubah perilaku dari tag tersebut dengan mengganti <em>value</em>-nya."</p>
+                    <div class="source">
+                        <p>Source: <a target="blank" class="link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/display/">https://developer.mozilla.org/en-US/docs/Web/CSS/display/</a></p>
+                    </div>
+                </div>
+                <div class="h">
+                    <h3>Value Display :</h3>
+                </div>
+                <div class="spek">
+                    <ul>
+                        <li>inline</li>
+                        <li>inline-block</li>
+                        <li>block</li>
+                        <li>none</li>
+                    </ul>
+                </div>
+                <div class="spek-content">
+                    <div class="h">
+                        <h4>inline :</h4>
+                    </div>
+                    <div class="spek">
+                        <ol>
+                            <li>Element HTML yang secara default <strong>tidak menambahkan</strong> garis baru ketika dibuat.</li>
+                            <li>Lebar dan tinggi elementnya <em>sebesar</em> konten yang ada didalam-nya.</li>
+                            <li>Kita <strong>tidak dapat</strong> mengatur tinggi dan lebar dari element inline.</li>
+                            <li>Margin dan padding hanya mempengaruhi element secara horizontal, <strong>tidak vertikal</strong>.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="spek-content">
+                    <div class="h">
+                        <h4>inline-block :</h4>
+                    </div>
+                    <div class="spek">
+                        <ol>
+                            <li>Tidak ada element yang secara default memiliki properti <em>display: inline-block;</em>.</li>
+                            <li>Kita harus ubah secara manual properti tersebut.</li>
+                            <li>Perilaku dasarnya sama dengan element inline.</li>
+                            <li>Perbedaannya, element inline-block dapat kita atur tinggi dan lebar-nya.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="spek-content">
+                    <div class="h">
+                        <h4>Block :</h4>
+                    </div>
+                    <div class="spek">
+                        <ol>
+                            <li>Element HTML yang secara dafault menambahkan garis baru ketika dibuat</li>
+                            <li>Jika tidaj tinggi dan lebar-nya, maka tinggi dan lebar default akan dari element block akan memenuh tinggi dan dan lebar </li>
+                            <li>Kita dapet mengatur tinggi dan lebar dari element block</li>
+                            <li>didalam element block, kita dapat menyimpan element tag dengan element inline,inline-blok, atau bahkan element inline-blok</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="spek-content">
+                    <div class="h">
+                        <h4>None :</h4>
+                    </div>
+                    <div class="spek">
+                        <ul>
+                            <li>Digunakan untuk <em>menghilangkan</em> sebuah element</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="Bag2">
+            <h2>#2 Dimensi</h2>
+            <div class="content">
+                <div class="definition">
+                    <p>Untuk mengatur ukuran width dan height element HTML, kita dapat mengatur-nya pada CSS dan akan kita sebut dengan Dimensi. </p>
+                </div>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="Bag3">
+            <h2>#3 Overflow</h2>
+            <div class="content">
+                <div class="bagan">
+                    <div class="visible">
+                        <div class="title">
+                            <p>Style : visible</p>
+                        </div>
+                        <div class="spek">
+                            <div class="ul-li">
+                                <ul>
+                                    <li>color: black; </li>
+                                    <li>background-color: pink; </li>
+                                    <li>width: 100%; </li>
+                                    <li>height: auto; </li>
+                                    <li>overflow: visible; </li>
+                                    <li>display: inline-block;</li>
+                                </ul>
+                            </div> 
+                        </div>   
+                    </div>
+                    <div class="scroll">
+                        <div class="title">
+                           <p>Style : scroll</p>
+                        </div>
+                        <div class="spek">
+                            <div class="ul-li">
+                                <ul>
+                                    <li>color: black; </li>
+                                    <li>background-color: pink; </li>
+                                    <li>width: 300-x; </li>
+                                    <li>height: 100px; </li>
+                                    <li>overflow: scroll; </li>
+                                    <li>display: inline-block;</li>
+                                </ul>
+                            </div>
+                            <div class="paragraf">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti magnam nesciunt, soluta excepturi ratione porro. Dignissimos quo repellat vitae ex, possimus aliquid eligendi nisi dolor et dolorum nostrum repellendus at. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, facere autem qui architecto vitae aliquid amet. Molestiae totam perspiciatis blanditiis, et fugiat odit rerum accusamus quisquam minima? Maiores, quisquam velit.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque sit iste quisquam architecto, porro, consectetur, quasi expedita quidem nemo minima ad repellendus. Molestiae itaque rerum eos voluptate doloribus esse ut.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus fugiat error necessitatibus debitis ullam ea laborum aliquid deserunt. Voluptas, facere corporis nobis at vel cupiditate maxime mollitia voluptatum id commodi?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden">
+                        <div class="title">
+                            <p>Style : hidden</p>
+                        </div>
+                        <div class="spek">
+                            <div class="ul-li">
+                                <ul>
+                                    <li>width: 300px; </li>
+                                    <li>height: 100px; </li>
+                                    <li>overflow: hidden; </li>
+                                    <li>display: inline-block;</li>
+                                </ul>
+                                <p class="lorem">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem natus nulla recusandae, totam perspiciatis quia facilis perferendis in dicta nisi quibusdam! Minima eos fugit dolore exercitationem, fugiat voluptates reiciendis dignissimos! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur laudantium quaerat facere qui delectus temporibus, rerum perferendis nobis! Animi ullam a modi voluptate quisquam facere tempore, quidem sed mollitia cupiditate? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam enim voluptas tenetur inventore perferendis iusto velit dolorum ad voluptate excepturi quia, pariatur dolore numquam cum, laboriosam praesentium in nisi ducimus!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><hr><br>
+        <div class="Bag4">
+            <h2>#4 Box Model</h2>
+            <div class="content">
+                <div class="definition">
+                    <div class="def1">
+                        <h4>Definisi box model :</h4>
+                        <ul>
+                            <li>Setiap element di halaman berada didalam sebuah box(kotak)</li>
+                            <li>Kita bisa mengatur ukuran dan posisi kotak tersebut</li>
+                            <li>kita bisa memberi warna/gambar sebagai background kotak tersebut</li>
+                        </ul>
+                        <div class="source">
+                            <p>Source :<a target="blank" class="link" href="https://css-tricks.com/the-css-box-model/">https://css-tricks.com/the-css-box-model/</a></p>
+                        </div>
+                    </div>
+                    <div class="def2">
+                        <p>CSS box model mendefinisikan 'kotak' yang dihasilkan oleh sebuah element, lalu menampilkannya sesuai dengan format visualnya. (Source :<a target="blank" href="https://www.w3.org/TR/CSS2/box.html">https://www.w3.org/TR/CSS2/box.html</a>)</p>
+                    </div>
+                    <div class="def3">
+                        <p>CSS box model terdiri dari <strong>margin</strong>, <strong>border</strong>, <strong>padding</strong>, dan <strong>content</strong>. (Source :<a target="blank" href="https://www.w3schools.com/css/css_boxmodel.asp">https://www.w3schools.com/css/css_boxmodel.asp</a> )</p>
+                        <div class="pref">
+                            <div class="maindef">
+                                <table border="1px" cellpadding="0" rowspan="5">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">CSS Box Model</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>Margin</th>
+                                            <td>Area transparant disekitar kotak(diluar border)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Padding</th>
+                                            <td>Area transparant didalam kotak(antara content dan border)</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Border</th>
+                                            <td>Batas disekeliling content dan border</td>
+                                        </tr>
+                                        <tr>
+                                            <th>Content</th>
+                                            <td>content sebenarnya didalam box, bisa berupa teks atau gambar</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
